@@ -1,11 +1,10 @@
-import { userData } from "../../data";
-import weightIcon from "../../assets/weight.png";
 import bmiIcon from "../../assets/bmi.png";
 import bodyFatIcon from "../../assets/body-fat.png";
-// import ActivityRings from "../ui/activityRings";
-import { WeightHistory } from "./weightHistory";
+import weightIcon from "../../assets/weight.png";
+import { userData } from "../../data";
+import { cn } from "../../utils/helper";
 import ActivityRings from "../ui/activityRings";
-import { classNames, cn } from "../../utils/helper";
+import { WeightHistory } from "./weightHistory";
 
 export default function HealthStats() {
   const heartRates = userData.healthStats.heartRateEvolution.map((hr) => ({
@@ -70,15 +69,15 @@ export default function HealthStats() {
           </dd>
         </div>
       </dl>
-      <div className='my-5 grid grid-cols-1 sm:grid-cols-3 gap-5'>
-        <div className='col-span-2 rounded-lg bg-white shadow p-6'>
+      <div className='my-5 grid grid-cols-1 md:grid-cols-3 gap-5'>
+        <div className='md:col-span-2 rounded-lg bg-white shadow p-6'>
           <p className='text-xl font-semibold text-gray-900'>Weight History</p>
           <WeightHistory />
         </div>
         <div className='rounded-lg bg-white shadow p-6 relative'>
           <p className='text-xl font-semibold text-gray-900'>Heart Rate</p>
           <ActivityRings rings={heartRates} />
-          <div className='flex items-center justify-center absolute bottom-0 md:bottom-5 right-0 left-0 flex-wrap'>
+          <div className='flex items-center justify-center absolute bottom-5 md:bottom-5 right-0 left-0 flex-wrap'>
             {heartRates.map((hr) => (
               <div key={hr.intensity} className='flex items-center text-xs mx-1'>
                 <div className='flex items-center gap-2'>
@@ -88,7 +87,7 @@ export default function HealthStats() {
                   ></div>
                   <p className=''>{hr.intensity}:</p>
                 </div>
-                <p>{hr.value}</p>
+                <p className='font-medium px-1'>{hr.value}</p>
               </div>
             ))}
           </div>

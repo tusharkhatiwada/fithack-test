@@ -69,7 +69,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                 <div className='flex h-16 shrink-0 items-center'>
                   <img
                     className='h-8 w-auto'
-                    src='https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600'
+                    src='https://static.wixstatic.com/media/f4b201_75cf7f337bde497797690f111fc90426~mv2.png/v1/crop/x_0,y_351,w_1563,h_606/fill/w_280,h_100,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/f4b201_75cf7f337bde497797690f111fc90426~mv2.png'
                     alt='Your Company'
                   />
                 </div>
@@ -127,7 +127,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
             <div className='flex h-16 shrink-0 items-center'>
               <img
                 className='h-8 w-auto'
-                src='https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600'
+                src='https://static.wixstatic.com/media/f4b201_75cf7f337bde497797690f111fc90426~mv2.png/v1/crop/x_0,y_351,w_1563,h_606/fill/w_280,h_100,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/f4b201_75cf7f337bde497797690f111fc90426~mv2.png'
                 alt='Your Company'
               />
             </div>
