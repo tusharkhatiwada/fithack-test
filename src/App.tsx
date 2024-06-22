@@ -4,12 +4,26 @@ import "@fontsource/poppins/400.css";
 import "@fontsource/poppins/500.css";
 import "@fontsource/poppins/600.css";
 import "@fontsource/poppins/700.css";
+import Goals from "./components/goals";
 import HealthStats from "./components/healthStats/healthStats";
+import Schedule from "./components/schedule";
+import { SleepTracking } from "./components/sleepTracking";
 
 function App() {
   return (
     <Layout>
-      <HealthStats />
+      <div className='grid grid-cols-1 md:grid-cols-4 gap-5'>
+        <div className='col-span-3'>
+          <HealthStats />
+          <Goals />
+        </div>
+        <div className='mt-5'>
+          <Schedule />
+        </div>
+      </div>
+      <div className='my-5'>
+        <SleepTracking />
+      </div>
     </Layout>
   );
 }

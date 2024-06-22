@@ -5,3 +5,11 @@
 body {
   font-family: 'Poppins', sans-serif;
 }
+
+.react-calendar {
+  border: 0;
+}
+
+.react-calendar__tile--hasActive, .react-calendar__tile--active {
+  /* border-radius: 5px; */
+}

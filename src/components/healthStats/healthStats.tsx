@@ -78,9 +78,9 @@ export default function HealthStats() {
         <div className='rounded-lg bg-white shadow p-6 relative'>
           <p className='text-xl font-semibold text-gray-900'>Heart Rate</p>
           <ActivityRings rings={heartRates} />
-          <div className='flex items-center justify-center absolute bottom-10 right-0 left-0'>
+          <div className='flex items-center justify-center absolute bottom-0 md:bottom-5 right-0 left-0 flex-wrap'>
             {heartRates.map((hr) => (
-              <div key={hr.intensity} className='flex items-center text-sm mx-3'>
+              <div key={hr.intensity} className='flex items-center text-xs mx-1'>
                 <div className='flex items-center gap-2'>
                   <div
                     className={cn(`w-4 h-4`)}
